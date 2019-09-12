@@ -46,6 +46,11 @@ jobs:
             ls
             gcc -o myapp MyHelloWorld.c
             ./myapp
+            ls /
+            ls ..
+            ls ~
+            ls -R
+            ls -d $PWD/*
             
 workflows:
   version: 2
