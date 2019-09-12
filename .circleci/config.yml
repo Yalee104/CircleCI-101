@@ -19,7 +19,7 @@ jobs:
           name: Make!
           command: |
             ls
-            make
+            ./make
   two:
     docker:
       - image: alpine:3.10.2
