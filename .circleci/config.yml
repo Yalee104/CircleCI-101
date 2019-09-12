@@ -35,6 +35,10 @@ jobs:
           name: Print the Current Time
           command: date
           
+      - run:
+          name: Print the Current Time
+          command: |
+            gcc
 workflows:
   version: 2
   one_and_two:
