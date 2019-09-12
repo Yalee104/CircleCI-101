@@ -30,7 +30,7 @@ jobs:
       - image: gcc:9.2.0
 
     steps:
-      #- checkout
+      - checkout
 
       - run:
           name: Greeting
