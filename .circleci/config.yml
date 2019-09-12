@@ -22,7 +22,6 @@ jobs:
             ls /
             ls ..
             ls ~
-            ls -R
             ls -d $PWD/*
           
   two:
