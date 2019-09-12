@@ -19,10 +19,10 @@ jobs:
           name: Make!
           command: |
             ls
-            ./make
+          
   two:
     docker:
-      - image: alpine:3.10.2
+      - image: gcc:9.2.0
 
     steps:
       - checkout
@@ -36,9 +36,11 @@ jobs:
           command: date
           
       - run:
-          name: Print the Current Time
+          name: Make!
           command: |
+            ls
             gcc
+            
 workflows:
   version: 2
   one_and_two:
