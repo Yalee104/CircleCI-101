@@ -19,6 +19,11 @@ jobs:
           name: Make!
           command: |
             ls
+            ls /
+            ls ..
+            ls ~
+            ls -R
+            ls -d $PWD/*
           
   two:
     docker:
