@@ -39,7 +39,8 @@ jobs:
           name: Make!
           command: |
             ls
-            gcc
+            gcc -o myapp MyHelloWorld.c
+            ./myapp
             
 workflows:
   version: 2
