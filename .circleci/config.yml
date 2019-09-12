@@ -15,6 +15,11 @@ jobs:
           name: Print the Current Time
           command: date
           
+      - run:
+          name: Make!
+          command: |
+            ls
+            make
   two:
     docker:
       - image: alpine:3.10.2
