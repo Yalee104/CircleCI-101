@@ -53,15 +53,17 @@ jobs:
     docker:
       - image: dexatek/tfe-python:1.0
         entrypoint: /bin/sh
-
+    working_directory: ~/opt/project/
     steps:
       - checkout
       - run:
           name: Python
           command: |
             ls
-            python
-            help()
+            ls /
+            ls ..
+            ls ~
+            ls -d $PWD/*            
         
 workflows:
   version: 2
