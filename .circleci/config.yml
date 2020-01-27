@@ -49,10 +49,27 @@ jobs:
             ls ..
             ls ~
             ls -d $PWD/*
-            
+  tree:
+    docker:
+      - image: dexatek/tfe-python:1.0
+        entrypoint: bin/sh
+    
+    steps:
+      - checkout
+      - run:
+          name: Python
+          command: |
+            ls
+            python
+            help()
+        
 workflows:
   version: 2
   one_and_two:
     jobs:
       - one
-      - two
+      - two      
+      - tree
+          requires:
+            - one
+            - two
