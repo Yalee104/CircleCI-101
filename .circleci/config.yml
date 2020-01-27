@@ -52,7 +52,7 @@ jobs:
   tree:
     docker:
       - image: dexatek/tfe-python:1.0
-        entrypoint: bin/sh
+          entrypoint: bin/sh
     
     steps:
       - checkout
@@ -66,8 +66,6 @@ jobs:
 workflows:
   version: 2
   one_and_two:
-    jobs:
-      - one
-      - two      
+    jobs:     
       - tree
 
