@@ -52,7 +52,7 @@ jobs:
   tree:
     docker:
       - image: dexatek/tfe-python:1.0
-          entrypoint: /bin/sh
+        entrypoint: /bin/sh
 
     steps:
       - checkout
