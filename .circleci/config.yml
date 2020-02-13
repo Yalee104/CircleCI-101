@@ -67,7 +67,7 @@ jobs:
         
 workflows:
   version: 2
-  one_and_two:
+  exec_tree:
     jobs:     
       - tree:
           filters:
