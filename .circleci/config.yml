@@ -69,5 +69,9 @@ workflows:
   version: 2
   one_and_two:
     jobs:     
-      - tree
+      - tree:
+          filters:
+            tags:
+              only: test
+              
 
