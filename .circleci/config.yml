@@ -71,7 +71,7 @@ workflows:
     jobs:     
       - tree:
           filters:
-            branches:
-              only: test
+            tags:
+              only: /^v.*/
               
 
